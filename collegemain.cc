@@ -1,3 +1,4 @@
+///@collegemain.cc
 /******************************************************
 	This is the main for Project 3, which asks you to 
     build a container that holds a list of college courses.
@@ -12,6 +13,7 @@
 	John Dolan			Spring 2015
 **********************************************************/
 
+///This is the main file for the College project
 #include <iostream>
 #include <fstream>
 #include <string>

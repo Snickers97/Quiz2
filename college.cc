@@ -1,9 +1,11 @@
+///@college.cc
 //********************
 //Matthew Aberegg
 //Project 3
 //CS 2401
 //10/8/2015
 //********************
+///This file creates the College class and provides functions to edit it
 #include "college.h"
 #include<cstdlib>
 #include<iostream>
@@ -11,6 +13,7 @@
 #include<string>
 using namespace std;
 
+///Creates the College class
 College::College(std::string s){
 	name = s;
 	head = NULL;
@@ -69,6 +72,7 @@ College& College::operator =(const College& other){
 	return * this;
 }
 
+///Adds a course to the College class and inserts it into the linked list
 void College::add(course& c){
 	node * previous;
 	node * cursor;
@@ -107,6 +111,7 @@ void College::add(course& c){
 	}
 }
 
+///Removes a course from the College class and reconnects the linked list
 void College::remove(std::string coursename){
 	node * previous;	
 	node * cursor;
